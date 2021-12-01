@@ -74,6 +74,9 @@ typedef NS_ENUM(NSUInteger, SexyTooltipArrowDirection) {
 // defaults to [down, up, right, left]
 @property (nonatomic, strong) NSArray *permittedArrowDirections;
 
+@property (nonatomic, assign) SexyTooltipArrowDirection arrowDirection;
+
+
 - (id)initWithContentView:(UIView *)contentView;
 
 - (id)initWithAttributedString:(NSAttributedString *)attrStr NS_EXTENSION_UNAVAILABLE_IOS("Not available in app extensions.");;
